@@ -1,0 +1,127 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    {% if title == 'shop_details' %}
+    <link rel="stylesheet" href="{% static 'css/shop_details.css' %}">
+    {% endif %}
+
+    {% if title == 'cart' %}
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+    {% endif %}
+
+    {% if title == 'contact' %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    {% endif %}
+
+
+    {% if title == 'profile' %}
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    {% endif %}
+
+    {% if title == 'login' %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    {% endif %}
+
+    {% if title == 'Edit_profile' %}
+    <link rel="stylesheet" href="{% static 'css/Edit_profile.css' %}">
+    {% endif %}
+
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <section class="FirstNav">
+            <div style="background-color:rgb(214, 214, 232);">
+                <div class="row">
+                    <span class="col-md-9 container-fluid nav1Left">
+                        <a href="#">FAQs | </a>
+                        <a href="#">Help | </a>
+                        <a href="#">Support </a>
+                    </span>
+                    <div class="col-md-2 d-inline-flex nav1Right">
+                        <a class="text-dark px-2" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-dark px-2" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-dark px-2" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-dark px-2" href="https://www.instagram.com/accounts/login/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-dark pl-2" href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- header close -->
+
+        <section>
+            <div class="container SecondNav">
+                <div class="row">
+                    <span class="col-md-4 logo Nav2left">
+                        <h1><span class="font-weight-bold border px-3 mr-1">The</span><a
+                                href="#"><strong>Jwells</strong></a>
+                        </h1>
+                    </span>
+                    <span class="col-md-5 Nav2middle">
+                        <nav class="navbar bg-light">
+                            <div class="container-fluid">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+                    </span>
+                    <span class="col-md-3 nav2end">
+                        <a href="" class="btn border">
+                            <i class="fas fa-heart text-primary"></i>
+                            <span class="badge text-dark">0</span>
+                        </a>
+                        <a href="{% url 'cart' %}" class="btn border">
+                            <i class="fas fa-shopping-cart text-primary"></i>
+                            <span class="badge text-dark">0</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </header>

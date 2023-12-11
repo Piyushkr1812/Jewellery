@@ -1,0 +1,97 @@
+{% load static %}
+<!-- navigation start -->
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container caraNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-piyu">
+
+                <li class="nav-item dropdown" style=" width:20px;">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fa-brands fa-slack fa-xl"></i>
+                    </a>
+
+                    <ul class="dropdown-menu " style="background-color: rgb(227, 235, 234);">
+                        <a class="dropdown-item" href="{% url 'ring' %}">Tanishq</a>
+                        <a class="dropdown-item" href="{% url 'earing' %}">Malabar gold and diamonds</a>
+                        <a class="dropdown-item" href="{% url 'chain' %}">PC jewellers</a>
+                        <a class="dropdown-item" href="{% url 'bracelets' %}">Kalyan jewellers</a>
+                        <a class="dropdown-item" href="{% url 'pendents' %}">Reliance jewels </a>
+                        <a class="dropdown-item" href="{% url 'neclaces' %}">Bhima jewellers</a>
+                        <a class="dropdown-item" href="{% url 'mangalsutra' %}">Joyalukkas</a>
+                        <a class="dropdown-item" href="{% url 'bangles' %}">Kiran Gems</a>
+                        <a class="dropdown-item" href="{% url 'gemstone' %}">GemstoneRajesh exports limited</a>
+                        <a class="dropdown-item" href="{% url 'shop' %}">Others</a>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'shop' %}">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'shop_details' %}" target="_blank">Shop
+                        Details</a>
+                </li>
+
+                <li class="nav-item dropdown" style=" width: 60px;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Trandy Product</a></li>
+                        <li><a class="dropdown-item" href="#">Just Arrived</a></li>
+                        <!-- <li>
+                            <hr class="dropdown-divider">
+                        </li> -->
+                        <li><a class="dropdown-item" href="#">Our Brands</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %} ">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                {% if 'userid' in request.session %}
+                <li>
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li>
+                    <a class="nav-link" href="{% url 'register' %}">Login/Register</a>
+                </li>
+                {% endif %}
+
+                <li class="nav-item dropdown" style=" width: 60px;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Accounts
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{% url 'profile' %}" class="dropdown-item">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-item">Setting</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- navigation close  -->
+{% include 'messages.html' %}

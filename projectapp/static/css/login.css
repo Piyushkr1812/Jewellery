@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* THIS CSS IS FOR HEADER  */
+
+/* Style the header with a grey background and some padding */
+
+.Loginheader {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.logo>img
+{
+    float: left;
+    height: 70px;
+    border-radius: 50%;
+    padding: 3px;
+    /* margin-left: 15px; */
+}
+
+.zoom>a {
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+/* Style the header links */
+.Loginheader-right > a {
+    padding: 20px 10px;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    margin-top: 7px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 14px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .Loginheader a:hover {
+    background-color: #e6bfbf;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .Loginheader a.active {
+    background-color: #e6bfbf;
+    color: black;
+  }
+  
+  /* Float the link section to the right */
+  .Loginheader-right {
+    float: right;
+  }
+  
+  .active {
+    background-color: #e6bfbf;
+    color: black;
+  }
+/* HEADER CSS IS CLOSE HERE   */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* account-page */
+.container{
+    /* max-width: 1300px; */
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-md-6 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.btnn{
+    text-align: center;
+    display: inline-block;
+    background: #bb6d0d;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btnn:hover{
+    background: #4a491f;
+}
+.account-page{
+    /* padding: 50px 0; */
+    background: radial-gradient(#fff,#fad18b);
+}
+.form-container{
+    background: rgb(253, 252, 247);
+    width: 300px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #f6b206;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .row{
+        text-align: center;
+    }
+    .col-2{
+        flex-basis: 100%;
+    }
+  
+}
+

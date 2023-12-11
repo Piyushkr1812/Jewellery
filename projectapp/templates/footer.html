@@ -1,0 +1,72 @@
+{% load static %}
+  <!-- Footer Start -->
+   <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6 footer_color">
+                <h4 class="text-secondary mb-4">The Jwells</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-light me-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa-solid fa-phone text-light me-3"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa fa-envelope text-white me-3"></i>info@example.com</p>
+                <div class="d-flex pt-3">
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 quick" style="display: grid; text-align: center; ">
+                <h4 class="text-secondary mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <a class="btn btn-link" href="">Support</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-secondary mb-4">Map</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.9022970319543!2d85.35833627365199!3d23.355554003823265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e37540db78a7%3A0xb44f47201789f795!2sCodezeal%20Technology%20Private%20Limited!5e0!3m2!1sen!2sin!4v1690534222941!5m2!1sen!2sin"
+                    width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-secondary mb-4">Newsletter</h4>
+                <div class="position-relative w-100">
+                    <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button"
+                        class="btn btn-danger py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4" style="background-color: antiquewhite;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="fw-medium" href="#">Your Site Name</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                Designed By <a class="fw-medium" href="#">HTML Codex</a> Distributed By <a class="fw-medium"
+                    href="#">TheCatchy</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+<!-- Footer End -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="{% static 'js/messages.js' %}"></script>
+<script>
+    new WOW().init();
+</script>

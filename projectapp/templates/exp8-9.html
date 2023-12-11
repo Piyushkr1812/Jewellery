@@ -1,0 +1,47 @@
+
+exp-8
+
+
+close all;
+clc;
+%Read an image
+original_image=imread('C:\Users\Piyush Kumar\Downloads\amar.jpeg');
+original_image = rgb2gray(original_image);
+[rows,columns]=size(original_image);
+window Size = 3;
+processed_image=original_image;
+for i=2:rows-1;
+    for j=2:columns-1;
+        windows=original_image(i-1:j+1,j-1:j+1)
+        processed_image(i,j)=median(window(:));
+    end
+end
+subplot(1,2,1),inshow(original_image),
+title('original image');
+subplot(1,2,2),inshow(processed_image),
+title('processed image');
+        
+
+
+exp-9
+
+
+close all;
+clc;
+org_img=imread('C:\Users\Piyush Kumar\Downloads\amar.jpeg');
+org_img=rgb2gray(org_img);
+subplot(2,2,1),inshow(org_img),
+title('original image');
+rotated c=inrotate(org_img,-90);
+subplot(2,2,2),inshow(rotated c);
+title('Rotated Clockwise image');
+rotated AC=inrotate(org_img 0.5);
+subplot(2,2,3),
+inshow(rotated AC),
+title('Rotated Anticlock wise image');
+zoomout=imresize(org_img,0.5);
+title('zoomed out image');
+zoomln=inresize(org_img,2);
+figure;
+inshow(zoomln);
+title('zoomed in image');

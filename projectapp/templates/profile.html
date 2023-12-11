@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<body>
+  {% include 'header.html' %}
+  {% include 'navigation.html' %}
+  <h2 style="text-align:center">User Profile Card</h2>
+  <div class="card">
+    {% if profile.profile_image.url != '' %}
+      <img src="{{profile.profile_image.url}}" alt="John" name="profile_image" style="width:100%">
+      {% else %}
+      <img src="" alt="avatar" class="rounded-circle img-fluid" style="width:150px;">
+      {% endif %}
+    <h1>{{profile.username}}</h1>
+    <p class="title">"{{profile.email}}"</p>
+    <p>{{profile.mobile}}</p>
+    <div style="margin: 24px 0;">
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <a href="{% url 'Edit_profile' %}" class="btn btn-sm btn-info">Edit Profile</a>
+    <p><button>Contact</button></p>
+  </div>
+
+
+
+</body>
+
+</html>

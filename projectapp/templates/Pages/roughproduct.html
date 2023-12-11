@@ -1,0 +1,18 @@
+def cart_total(request):
+#         if 'userid' in request.session:
+#             uid=request.session['userid']
+#             cart_item=Cart.objects.filter(register_id=uid)
+#             for i in cart :
+#                 if request.method == "POST":
+#                     pid=i.product_id
+#                     uid=request.session['userid']
+#                     product=Product.objects.get(id=pid)
+#                     Order.objects.create(register_id=uid,pname=product.pname,price=product.price,status=0,product_image=product.image,mobile_no=0)
+#                     last_id=(Order.objects.earliest('id')).id
+#                     data={'title':'buynow','last_id':last_id}
+#                     return render(request,'checkout.html',data)
+#                 else:
+#                     return redirect('product')
+#         else:
+#             messages.add_message(request,messages.ERROR,'Please Login first!')
+#             return redirect('login')

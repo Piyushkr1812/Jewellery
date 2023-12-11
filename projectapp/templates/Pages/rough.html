@@ -1,0 +1,55 @@
+<!-- <div class="row">
+                     <div class="col-lg-3 col-md-6 col-12" style="padding: 2%;">
+                        <div class="card">
+                            <img src="{% static 'images/trendy1.jpeg' %}" alt="Denim Jeans" style="width:100%"
+                                class="zoom">
+                            <h3 style="padding: 2%; font-family:'Times New Roman', Times, serif; margin: 1%;">Tailored
+                                Jeans</h3>
+                            <div class="d-flex justify-content-center">
+                                <h6>$123.00</h6>
+                                <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i
+                                        class="fas fa-eye text-primary mr-1"></i>View
+                                    Detail</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i
+                                        class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                            </div>
+                            <span style="cursor:pointer" onmouseover="this.style.background='CadetBlue';"
+                                onmouseout="this.style.background='inherit';"><a href=""
+                                    class="btn btn-sm text-dark p-1 fs-6"
+                                    style="color: black; text-decoration: none;">Buy Now</a></span>
+                        </div>
+                    </div> -->
+
+                    <div class="col-lg-3 col-md-6 col-12" style="padding: 2%;">
+                        <div class="card">
+                            <img src="{{i.image.url}}" alt="Denim Jeans" style="width:100%"
+                                class="zoom">
+                            <h3 style="padding: 2%; font-family:'Times New Roman', Times, serif; margin: 1%;">{{i.pname}}</h3>
+                            <div class="d-flex justify-content-center">
+                                <h6>₹{{i.price}}</h6>
+                                <h6 class="text-muted ml-2"><del>₹{{i.price}}</del></h6>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i
+                                        class="fas fa-eye text-primary mr-1"></i>View
+                                    Detail</a>
+                                    {% csrf_token %}
+                        <form method="POST" action="{% url 'cart' %}">
+                            {% csrf_token %}
+                            <input type="hidden" value="{{i.id}}" name="pid"/>
+                            <button type="submit" class="fas fa-shopping-cart text-primary mr-1">Add To Cart</button>
+                        </form>
+                            </div>
+                            <span style="cursor:pointer" onmouseover="this.style.background='CadetBlue';"
+                                onmouseout="this.style.background='inherit';"><a href=""
+                                    class="btn btn-sm text-dark p-1 fs-6"
+                                    style="color: black; text-decoration: none;">Buy Now</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            

@@ -1,0 +1,97 @@
+*{
+    font-weight: bold;
+    font-family: monospace;
+  }
+  html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  :root {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+    
+  /* This Css is for second Header */
+  
+  .nav2end>a {
+    margin: 3%;
+    padding: 1%;
+    float: right;
+  }
+  
+  ul.navbar-piyu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  
+  
+  .login {
+    float: right;
+    padding: 1%;
+  }
+  
+  .login>a {
+    color: black;
+    text-decoration: none;
+    margin: 3px;
+  }
+  
+  
+  .logo>h1>span {
+    color: rgb(237, 135, 10);
+    border: 1px solid brown;  
+  }
+  
+  .logo>h1>a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  .d-flex {
+    width: 100%;
+  }
+
+  /* second Header end here */
+  .details
+  {
+    margin-top: 2%;
+  }
+  
+.d-flex
+{
+    width: 80%;
+    margin: 1%;
+}
+
+/*
+hide the shipping address block 
+*/
+
+div.Addresses , div.product  {
+  display: none;
+}
+
+#cut {
+   font-size: 20px ;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: monospace;
+   display: none;
+   float: right;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   color: black;
+}

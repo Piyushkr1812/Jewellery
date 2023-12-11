@@ -1,0 +1,305 @@
+*{
+  font-weight: bold;
+  font-family: monospace;
+}
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* This Css is For Header */
+
+.nav1Left {
+  padding: 3px;
+}
+
+.nav1Left>a {
+  color: #000;
+  display: inline;
+  text-decoration: none;
+}
+
+.nav1Right {
+  width: 100%;
+}
+
+.SecondNav {
+  margin: 1%;
+}
+
+/* This Css is for Navigation */
+
+.nav2end>a {
+  margin: 3%;
+  padding: 1%;
+  float: right;
+}
+
+ul.navbar-piyu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+.login {
+  float: right;
+  padding: 1%;
+}
+
+.login>a {
+  color: black;
+  text-decoration: none;
+  margin: 3px;
+}
+
+
+.logo>h1>span {
+  color: rgb(237, 135, 10);
+  border: 1px solid brown;
+
+}
+
+.logo>h1>a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.d-flex {
+  width: 100%;
+}
+
+
+
+/* this is for home nav */
+
+.dropdown {
+  display: inline-block;
+  /* padding: 5px; */
+  text-decoration: none;
+}
+
+d.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+  text-decoration: none;
+}
+
+.caraNav a:hover {
+  color: #cf1313;
+}
+
+
+.Homenav>ul>li>a {
+  margin-left: 20px;
+}
+
+/* this is for side dropdown */
+
+/* Dropdown Button */
+.dropbtn {
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: rgb(154, 118, 118);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  /* position: absolute; */
+  background-color: #f1f1f1;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  border: 0.5px solid black;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+
+.login>a {
+  text-decoration: none;
+  color: black;
+  float: right;
+}
+
+
+.zoom>a {
+  transition: transform .2s;
+  /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Second Class CSS start  */
+
+.card1 {
+  border: 1px solid grey;
+  background-color: rgb(215, 215, 245);
+}
+
+.card2 {
+  border: 1px solid grey;
+  background-color: rgb(215, 215, 245);
+
+}
+
+/* Second Class CSS End */
+
+
+/* trendy Product Css start */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/* trendy product css end  */
+
+
+
+/* updated css start here  */
+
+.updated {
+  margin: 5%;
+  padding: 2%;
+  border: 1px solid rgb(94, 86, 86);
+  height: 150%;
+  background-color: rgb(202, 220, 220);
+}
+
+.updated>form {
+  margin: 2%;
+}
+
+.updated>form>input {
+  margin-top: 0.5%;
+  height: 15%;
+  width: 60%;
+}
+
+.updated>form>button {
+  background-color: rgb(94, 154, 207);
+}
+
+.stay:hover {
+  background: rgb(59, 249, 59);
+}
+
+/* updated css end here  */
+
+
+/* company start here  */
+
+.company>img
+{
+  justify-content: space-around;
+  padding: 1%;
+  max-width: 80%;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+/* company End here  */
+
+
+.Usefull_links >div>a{
+  /* display: inline; */
+  /* justify-content: start; */
+  /* display: left; */
+  text-align: left;
+}
+
+/* footer css  */
+  
+.quick>a,p
+{
+color: rgb(245, 190, 179);
+text-decoration: none;
+}
