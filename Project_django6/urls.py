@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("", projectapp.urls),
+    path('admin/', admin.site.urls),
     path('para/', include('para.urls')),  # Assuming you have an app named 'para'
     path('super/', include('super.urls')),  # Assuming you have an app named 'super'
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
